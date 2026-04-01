@@ -4,7 +4,7 @@ Inspect dask chunk boundaries and indices for OME-Zarr data in napari.
 
 Hover over any pixel to see which chunk it belongs to, and draw a grid overlay marking every chunk boundary in the current 2D view.
 
-![Chunk Inspector screenshot](assets/screenshot.png)
+![Chunk Inspector screenshot](assets/chunkviewer.png)
 
 ## Features
 
