@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/napari_chunk_inspector/__init__.py
+src/napari_chunk_inspector/_widget.py
+src/napari_chunk_inspector.egg-info/PKG-INFO
+src/napari_chunk_inspector.egg-info/SOURCES.txt
+src/napari_chunk_inspector.egg-info/dependency_links.txt
+src/napari_chunk_inspector.egg-info/entry_points.txt
+src/napari_chunk_inspector.egg-info/requires.txt
+src/napari_chunk_inspector.egg-info/top_level.txt

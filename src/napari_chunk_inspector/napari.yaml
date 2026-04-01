@@ -1,0 +1,10 @@
+name: napari-chunk-inspector
+display_name: Chunk Inspector
+contributions:
+  commands:
+    - id: napari-chunk-inspector.chunk_inspector_widget
+      title: Chunk Inspector
+      python_name: napari_chunk_inspector._widget:ChunkInspector
+  widgets:
+    - command: napari-chunk-inspector.chunk_inspector_widget
+      display_name: Chunk Inspector

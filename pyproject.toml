@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "napari-chunk-inspector"
+version = "0.1.0"
+description = "Visualize dask chunk boundaries and indices for OME-Zarr data in napari"
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.9"
+dependencies = [
+    "napari>=0.4.19",
+    "dask[array]",
+    "numpy",
+    "qtpy",
+]
+
+[project.entry-points."napari.manifest"]
+napari-chunk-inspector = "napari_chunk_inspector:napari.yaml"

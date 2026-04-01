@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-chunk-inspector = napari_chunk_inspector:napari.yaml

@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: napari-chunk-inspector
+Version: 0.1.0
+Summary: Visualize dask chunk boundaries and indices for OME-Zarr data in napari
+License: BSD-3-Clause
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: napari>=0.4.19
+Requires-Dist: dask[array]
+Requires-Dist: numpy
+Requires-Dist: qtpy
+
+# napari-chunk-inspector
+
+Visualize dask array chunk boundaries and indices for OME-Zarr data in napari.
+
+## Features
+
+- **Hover info** — chunk index, data-space slices, chunk shape, dtype, scale level
+- **Chunk grid** — yellow lines at every chunk boundary in 2D mode
+- **Chunk highlight** — cyan rectangle around the chunk under the cursor
+- **nD-aware** — works with any dimensionality; shows grid for the last two axes
+- **Multi-scale** — reports the currently displayed pyramid level
+
+## Install
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+After installing, the widget appears under **Plugins → Chunk Inspector** in napari.
+
+Or launch programmatically:
+
+```python
+import napari
+from napari_chunk_inspector._widget import ChunkInspector
+
+viewer = napari.Viewer()
+viewer.open("path/to/data.ome.zarr", plugin="napari-ome-zarr")
+widget = ChunkInspector(viewer)
+viewer.window.add_dock_widget(widget, name="Chunk Inspector", area="right")
+napari.run()
+```
